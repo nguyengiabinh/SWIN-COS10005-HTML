@@ -1,6 +1,9 @@
 header{
   text-align: center;
 }
+h2{
+  text-align: center;
+}
 nav {
 	height:1em;
 	line-height:1em;
@@ -62,5 +65,5 @@ a {
   margin: 20px 33.33%;
 }
 .animal{
-  margin: 20px 33.33%;
+  margin: 20px 40%;
 }
