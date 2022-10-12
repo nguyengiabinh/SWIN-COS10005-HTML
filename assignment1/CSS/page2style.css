@@ -1,7 +1,10 @@
+header{
+  text-align: center;
+}
 nav {
 	height:1em;
 	line-height:1em;
-	margin:20px 0px;
+	margin:20px 20%;
 }
 ul {
     float:left;
@@ -54,4 +57,10 @@ a {
 
 .Title{
     text-align: center;
+}
+.plant{
+  margin: 20px 33.33%;
+}
+.animal{
+  margin: 20px 33.33%;
 }
