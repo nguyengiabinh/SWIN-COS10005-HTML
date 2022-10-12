@@ -2,3 +2,9 @@ main{overflow: auto;}
 #p1{border: solid 3px red;
     border-radius: 25px;
 padding: 2em;}
+
+@media screen and (max-width:640px) {
+    #p1 {
+        display: none;
+    }
+}
