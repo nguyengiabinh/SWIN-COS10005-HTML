@@ -1,0 +1,139 @@
+body{
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (min-width:1024px){
+header{
+    text-align: center;
+  }
+  ul{
+    float: left;
+    width: 100%;
+    margin: 20px 30%;
+    padding: 0;
+    overflow: hidden;
+    list-style-type:none;
+  }
+a {
+        float:left;
+        width:6em;
+        text-decoration:none;
+        color:white;
+        background-color:blue;
+        border-right: 1px solid white;
+        text-align: center;
+    }
+h2{
+        text-align: center;
+    }
+h4{
+  text-align: center;
+}
+#Ta{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 24%;
+}
+#Ta1{
+  width: 400px;
+  height: 240px;
+}
+#Ta2{
+  width: 400px;
+  height: 240px;
+}
+}
+@media screen and (max-width:480px){
+   
+  .header{
+          background-color: white;
+          position: absolute;
+          width: 100%;
+          z-index: 3;
+      }
+  .header ul{
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          list-style-type:none;
+          background-color: white;
+      }
+      
+  .header ul a{
+          display: block;
+          padding: 20px;
+          border-right: 1px blue;
+          text-decoration: none;
+      }
+      
+  .header ul a:hover{
+          background-color: red;
+      }
+      
+  .header .menu{
+          clear:both;
+          max-height: 0;
+          transition: max-height .1s ease-out;
+      
+      }
+  .header .menu-icon{
+          padding: 28px 20px;
+          position: relative;
+          float:right;
+          cursor: pointer;
+      
+      }
+      
+  .header .menu-icon .nav-icon{
+          background-color: black;
+          display: block;
+          height: 2px;
+          width: 18px;
+          position: relative;
+          transition: background .2s ease-out;
+      }
+      
+  .header .menu-icon .nav-icon:before{
+          background: black;
+          content: "";
+          display: block;
+          height: 100%;
+          width: 100%;
+          position: relative;
+          transition: all .1 ease-out;
+          top:5px;
+      
+      }   
+  .header .menu-icon .nav-icon:after{
+          background: black;
+          content: "";
+          display: block;
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          top:-5px;
+      
+      }
+  .header .menu-btn{
+          display:none;
+      
+      }
+      
+  .header .menu-btn:checked ~ .menu{
+          max-height: 420px;
+      }
+  #Ta{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+      }
+  #Ta1{
+    width: 335px;
+    height: 180px;
+      }
+  #Ta2{
+    width: 335px;
+   height: 180px;
+      }
+    }
