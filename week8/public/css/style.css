@@ -1,0 +1,42 @@
+/*  {
+    color: red;
+} */
+
+h1 {
+    color: green;
+}
+
+p {
+    color: purple;
+}
+
+#city {
+    color: red;
+}
+
+#p-01 {
+    color: yellow;
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 2px 2px 10px red;
+    border: solid 3px red;
+    padding: 30px;
+    margin: 100px;
+    border-radius: 25px;
+}
+
+.class-01 {
+    color: grey;
+}
+
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media screen and (max-width:640px) {
+    #p-01 {
+        display: none;
+    }
+}
