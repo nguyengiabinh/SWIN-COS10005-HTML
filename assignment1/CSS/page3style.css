@@ -1,15 +1,13 @@
 body{
   margin: 0px;
+  overflow-x: hidden;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: green;
+  color: white;
 }
 @media screen and (min-width:1024px){
 header{
     text-align: center;
-}
-nav {
-	height:1em;
-	line-height:1em;
-	margin:20px 32%;
 }
 ul{
   float: left;
@@ -28,11 +26,12 @@ a {
         border-right: 1px solid white;
         text-align: center;
     }
-#TheFatRat{
-    background-color: white;
-    color: black;
-    width: 15%;
-}
+  img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 24%;
+    }
 h2{
     text-align: center;
 }
@@ -58,7 +57,7 @@ h2{
   }
 }
  
-  @media screen and (max-width:480px){
+  /*@media screen and (max-width:480px){
    
     .header{
             background-color: white;
@@ -92,7 +91,7 @@ h2{
         
         }
     .header .menu-icon{
-            padding: 28px 20px;
+            padding: 25px 20px;
             position: relative;
             float:right;
             cursor: pointer;
@@ -115,7 +114,7 @@ h2{
             height: 100%;
             width: 100%;
             position: relative;
-            transition: all .1 ease-out;
+            transition: all .1s ease-out;
             top:5px;
         
         }
@@ -165,4 +164,4 @@ h2{
         width: 335px;
         height: 180px;
         }
-      }
+      }*/

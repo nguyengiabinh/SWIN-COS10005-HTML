@@ -1,26 +1,22 @@
 body{
   margin: 0px;
   overflow-x: hidden;
-  background-color: green;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: green;
   color: white;
 }
-
 @media screen and (min-width:1024px){
-  header{
-  text-align: center;
-}
-h2{
-  text-align: center;
-}
-ul{
-  float: left;
-  width: 100%;
-  margin: 20px 30%;
-  padding: 0;
-  overflow: hidden;
-  list-style-type:none;
-}
+header{
+    text-align: center;
+  }
+  ul{
+    float: left;
+    width: 100%;
+    margin: 20px 30%;
+    padding: 0;
+    overflow: hidden;
+    list-style-type:none;
+  }
 a {
         float:left;
         width:6em;
@@ -30,71 +26,27 @@ a {
         border-right: 1px solid white;
         text-align: center;
     }
-
-* {
-    box-sizing: border-box;
-  }
-  
-  /* Create three equal columns that floats next to each other */
-  .column {
-    float: left;
-    width: 33.33%;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  .column2 {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  /* Clear floats after the columns */
-  .row2:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-.Title{
-    text-align: center;
+h2{
+        text-align: center;
+    }
+h4{
+  text-align: center;
 }
-.plant{
-  margin: 20px 33.33%;
+#Ta{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 24%;
 }
-.animal{
-  margin: 20px 40%;
-}
-#Nep{
+#Ta1{
   width: 400px;
   height: 240px;
 }
-#Serra{
-  width: 400px;
-  height: 240px;
-}
-#Others{
-  width: 400px;
-  height: 240px;
-}
-#Taran{
-  width: 400px;
-  height: 240px;
-}
-#Roaches{
+#Ta2{
   width: 400px;
   height: 240px;
 }
 }
-
 /*@media screen and (max-width:480px){
    
   .header{
@@ -155,7 +107,7 @@ a {
           transition: all .1s ease-out;
           top:5px;
       
-      }
+      }   
   .header .menu-icon .nav-icon:after{
           background: black;
           content: "";
@@ -174,33 +126,17 @@ a {
   .header .menu-btn:checked ~ .menu{
           max-height: 420px;
       }
-      .Title{
-        text-align: center;
-    }
-    .plant{
-      margin: 20px 33.33%;
-    }
-    .animal{
-      margin: 20px 40%;
-    }
-    #Nep{
-      width: 335px;
-      height: 180px;
-    }
-    #Serra{
-      width: 335px;
-      height: 180px;
-    }
-    #Others{
-      width: 335px;
-      height: 180px;
-    }
-    #Taran{
-      width: 335px;
-      height: 180px;
-    }
-    #Roaches{
-      width: 335px;
-      height: 180px;
-    }
-}*/
+  #Ta{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+      }
+  #Ta1{
+    width: 335px;
+    height: 180px;
+      }
+  #Ta2{
+    width: 335px;
+   height: 180px;
+      }
+    }*/

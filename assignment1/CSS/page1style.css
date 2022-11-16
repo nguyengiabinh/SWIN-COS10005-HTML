@@ -1,21 +1,18 @@
 body{
     margin: 0px;
+    overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: green;
+    color: white;
 }
 
 #Me{
     width: 340px;
     height: 500px;
   }
+  @media screen and (min-width:1024px){
 
-@media screen and (min-width:1024px){
-    nav {
-        height:1em;
-        line-height:1em;
-        margin:20px 32%;
-    }
-
-    a {
+a {
             float:left;
             width:6em;
             text-decoration:none;
@@ -24,7 +21,7 @@ body{
             border-right: 1px solid white;
             text-align: center;
         }
-        ul{
+ul{
             float: left;
             width: 100%;
           margin: 20px 30%;
@@ -32,40 +29,39 @@ body{
           overflow: hidden;
           list-style-type:none;
         }
-    aside{
-            float:right;
-            width:30%;
-            font-size: 20px;
+aside{
+            margin: 10px 37%;
+            width:25%;
+            font-size: 15px;
             font-style: italic;
-            color: green;
-            border-style: groove;
-            background-color: lightgray;
-            margin-top: 10px;
+            color: white;
+            background-color: blue;
             }
-    
-    main{
-        float: left;
+#Contactme{
+        text-align: center;
     }
-    #Me{
+    
+main{
+        margin-left: 41%;
+    }
+#Me{
         width: 340px;
         height: 500px;
       }
-    footer, hr {
+footer, hr {
         clear:both;
         margin-top: 20px;
-        width: 30%;
+        width: 100%;
         float: left;
         }
-    h2{
+h2{
         text-align: center;
     }
-    hr{
-        width: 100%;
-    }
-    
 }
+    
 
-@media screen and (max-width:480px){
+
+/*@media screen and (max-width:480px){
    
 .header{
         background-color: white;
@@ -99,7 +95,7 @@ body{
     
     }
 .header .menu-icon{
-        padding: 28px 20px;
+        padding: 25px 20px;
         position: relative;
         float:right;
         cursor: pointer;
@@ -122,7 +118,7 @@ body{
         height: 100%;
         width: 100%;
         position: relative;
-        transition: all .1 ease-out;
+        transition: all .1s ease-out;
         top:5px;
     
     }
@@ -183,4 +179,4 @@ main{
         width: 100%;
     }
 
-}
+}*/
