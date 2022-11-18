@@ -13,13 +13,13 @@
 <body>
   <header>
     <div id="header_container">
-      <img src="" alt="Dreamy cafe logo" id="header_icon"><p id="header_title">Dreamy Cafe</p>
+      <img src="image/logo.png" alt="Dreamy cafe logo" id="header_icon"><p id="header_title"><a rel="Click" href="index.html" style="text-decoration: none;">Dreamy Cafe</a></p>
     </div>
     <div id="nav">
       <ul>
-        <li><a class="a1" href="index.html">Register</a></li>
-        <li><a class="a1" href="page2.html">Order now</a></li>
-        <li><a class="a1" href="page3.html">Home</a></li>
+        <li><a class="a1 " href="register.html">Register</a></li>
+        <li><a class="a1 " href="order.html">Order now</a></li>
+        <li><a class="a1 " href="index.html">Home</a></li>
       </ul>
     </div>
 
@@ -33,52 +33,82 @@
 
   <h1 class="categories">What we have</h1>
 
-  <div class="row" id="type_of_cof">
+  <div class="row">
+
     <div class="column">
       <strong><a href="" class="menu">Instant</a></strong>
-      <img src="" alt="Instant_Coffee" id="instant">
+      <img class="foodMenu" src="image/sample.jpg" alt="Instant_Coffee" id="instant" width="600px" height="340px">
     </div>
+
     <div class="column">
       <strong><a href="" class="menu">IN-HOUSE</a></strong>
-      <img src="" alt="IN-HOUSE_creation" id="inhouse">
+      <img class="foodMenu" src="image/sample.jpg" alt="IN-HOUSE_creation" id="inhouse" width="600px" height="340px">
     </div>
+
   </div>
 
-  <h3 class="categories">Side Dish</h3>
+  <div class="row2">
 
-  <div class="row2" id="type_of_cof">
     <div class="column2">
-      <strong><a href="" class="menu">SEEDLINGS</a></strong>
-      <img src="" alt="seed" id="seed">
+      <strong><a href="" class="menu">ESPRESSO</a></strong>
+      <img class="foodMenu" src="image/sample.jpg" alt="espresso" id="espresso" width="600px" height="340px">
     </div>
+
     <div class="column2">
       <strong><a href="" class="menu">CHOCOLATE</a></strong>
-      <img src="" alt="chocolate" id="chocolate">
+      <img class="foodMenu" src="image/sample.jpg" alt="chocolate" id="chocolate" width="600px" height="340px">
     </div>
+
   </div>
-  <h2 class="categories">Location and Hours</h2>
+  <div id="caution1">
+    <p>Seedlings and chocolate will be send as side on every order for free so they are not options to select when ordering</p>
+    <p>When you choose a drink you will have whatever we have at the time so its a gamble</p>
+  </div>
+
+  <h2 id="LaH" class="categories">Location and Hours</h2>
 
   <div>
 
    <div id="map" class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=400&amp;height=400&amp;hl=en&amp;q=Tay Ho&amp;t=p&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://formatjson.org/">format json</a></div><style>.mapouter{position:relative;text-align:right;width:400px;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:400px;height:400px;}.gmap_iframe {width:400px!important;height:400px!important;}</style></div>
    <div id="hours">
-    <ul>
-      <li class="schedule"><strong>Monday: 6:30-22:00</strong></li>
-      <li class="schedule"><strong>Tuesday: 6:30-22:00</strong></li>
-      <li class="schedule"><strong>Wednesday: 6:30-22:00</strong></li>
-      <li class="schedule"><strong>Thursday: 6:00-00:00</strong></li>
-      <li class="schedule"><strong>Friday/Saturday/Sunday: CLOSED</strong></li>
-    </ul>
-
+    <table id="table">
+      <tr>
+       <th>Monday</th>
+       <th>Tuesday</th>
+       <th>Wednesday</th>
+       <th>Thursday</th>
+       <th>Friday</th>
+       <th>Saturday</th>
+       <th>Sunday</th>
+      </tr>
+      <tr>
+       <td class="wordsize">6h30-9h00</td>
+       <td class="wordsize">6h30-9h00</td>
+       <td class="wordsize">6h30-9h00</td>
+       <td class="wordsize">8h30-11h00</td>
+       <td class="wordsize">CLOSED</td>
+       <td class="wordsize">CLOSED</td>
+       <td class="wordsize">CLOSED</td>
+      </tr>
+  </table>
    </div>
   </div>
 
   <footer>
     <hr>
+  <div id="footer_logo">
+      <img src="image/logo.png" alt="Dreamy cafe logo" id="footer_icon" width="200px" height="200px">
+  
+  </div>
+
+  <div id="copyright">
     <h6>Address: the Drifting Cosmic Canivorous Garden</h6>
     <h6>Tel: 123456789</h6>
     <h6>myass@nebula707.com</h6>
     <h5>All images are copyright or refferenced</h5>
+  </div>
+
+
 </footer>
 
 

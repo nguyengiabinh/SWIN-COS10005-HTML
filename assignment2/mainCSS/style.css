@@ -13,6 +13,12 @@ ul {
     text-align: center;
 }
 
+#caution1 {
+    color: red;
+    text-align: center;
+
+}
+
 /*HEADER*/
 
 .a1 {
@@ -22,6 +28,11 @@ ul {
     font-size: 1.2em;
     color: yellow;
 
+}
+
+a:is(:active).active {
+    color: yellow;
+    background-color: aqua;
 }
 
 header{
@@ -70,6 +81,7 @@ header{
 }
 
 /*2 equal collums*/
+
 * {
     box-sizing: border-box;
   }
@@ -87,9 +99,9 @@ header{
     width: 50%;
     padding: 10px;
     text-align: center;
-  }
-  
-  /* Clear floats after the columns */
+}
+
+/* Clear floats after the columns */
 .row:after {
     content: "";
     display: table;
@@ -100,27 +112,46 @@ header{
     content: "";
     display: table;
     clear: both;
-  }
+}
+
 
 
 .menu {
     margin: 20px 40%;
+    text-decoration: none;
+    font-size: 1.5em;
 }
 
 /*MAP AND HOURS*/
 
-#map {
-    margin-left: 10%;
-    float: left;
+#LaH {
+    margin-top: 2%;
 }
 
-.schedule {
-    text-decoration: none;
-    float: right;
-    margin-right: 10%;
-    margin-top: 5%;
-    
+
+#map {
+margin: 5% 40%;
 }
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+th, td {
+    padding: 10px;
+    text-align: left;
+  }
+#table{
+  margin: 20px 33%;
+  background-color: white;
+  
+}
+
+ /* image */
+ .foodMenu:hover {
+    opacity:0.4;
+ }
+
 
 /*FOOTER*/
 
@@ -132,3 +163,24 @@ footer, hr {
     background-color: mediumorchid;
     color: yellow;
     }
+
+#copyright {
+    float: left;
+    width: 85%;
+}
+
+#footer_logo {
+    float: left;
+    width: 15%;
+}
+
+
+    /*order.html*/
+
+#ifYes {
+    visibility: hidden;
+}
+
+#ifChose {
+    visibility: hidden;
+}

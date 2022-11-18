@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> DREAMY CAFE </title>
+  <meta charset="utf-8" >
+  <meta name="description" content="Web Development" >
+  <meta name="keywords"    content="Dreamy Cafe" >
+  <meta name="author"      content="Nguyen Gia Binh" >
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="mainCSS/style.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div id="header_container">
+          <img src="image/logo.png" alt="Dreamy cafe logo" id="header_icon"><p id="header_title"><a rel="Click" href="index.html" style="text-decoration: none;">Dreamy Cafe</a></p>
+        </div>
+        <div id="nav">
+          <ul>
+            <li><a class="a1 " href="register.html">Register</a></li>
+            <li><a class="a1 " href="order.html">Order now</a></li>
+            <li><a class="a1 " href="index.html">Home</a></li>
+          </ul>
+        </div>
+    
+    </header>
+
+  <form id="regform" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/formtest.php">
+
+    <fieldset>
+
+        <legend>Information</legend>
+
+        <div>
+            <label>Pick-up or Delivery ?</label>
+            <input type="radio" onclick="yesnoCheck();" name="take_order" id="deli" value="delivery" />
+            <label>Delivery</label>
+            <input type="radio" onclick="yesnoCheck();" name="take_order" id="pickup" value="pickup" />
+            <label>Pick-up</label>
+        </div>
+
+        <div id="ifYes">
+            <div>
+                <label>Delivery address</label>
+                <input id="delivery" type="text" name="delivery_address" />
+            </div>
+            <div class="radioinput">
+                <label>Billing address = delivery address</label>
+                <input id="same" type="checkbox" name="same_delivery_address" value="yes" onclick="copy(event)" />
+            </div>
+            <div>
+                <label>Billing address</label>
+                <input id="billing" type="text" name="billing_adress" />
+            </div>
+        </div>
+
+        <div>
+            <label>Contact number</label>
+            <input id="contact" type="number" name="contact" />
+        </div>
+
+        <div>
+            <label>Email</label>
+            <input type="email" id="email" name="email" />
+        </div>
+
+        <div>
+            <label>Drink</label>
+            <input type="radio" name="drink" value="inH" >In-house
+            <input type="radio" name="drink" value="inS" >Instant
+        </div>
+
+        <div>
+            <label>Payment method</label>
+            <input type="radio" onclick="yesCheck();" name="pay" id="paypickup" value="on_pick-up" />pick-up
+            <input type="radio" onclick="yesCheck();" name="pay" id="payonline" value="online" />Online
+            
+        </div>
+
+    </fieldset>
+
+    <div id="ifChose" >
+
+        <fieldset>
+
+            <legend>Credit card information</legend>
+
+            <div class="">
+                <label>Choose one of the following card</label>
+                <input type="radio" id="visa" name="card_type" value="Visa" />
+
+                <label>Visa</label>
+                <input type="radio" id="master" name="card_type" value="Mastercard" />
+
+                <label>Mastercard</label>
+                <input type="radio" id="americanex" name="card_type" value="American_Express" />
+                <label>American Express</label>
+            </div>
+
+            <div>
+                <label>Enter credit card number</label>
+                <input id="creditnumber" type="number" name="credit_number" />
+            </div>
+
+        </fieldset>
+    </div>
+
+    <div">
+        <input type="reset" value="Reset" />
+        <input type="submit" value="Submit" />
+    </div>
+    
+</form>
+  
+
+
+<footer>
+    <hr>
+  <div id="footer_logo">
+      <img src="image/logo.png" alt="Dreamy cafe logo" id="footer_icon" width="200px" height="200px">
+  
+  </div>
+
+  <div id="copyright">
+    <h6>Address: the Drifting Cosmic Canivorous Garden</h6>
+    <h6>Tel: 123456789</h6>
+    <h6>myass@nebula707.com</h6>
+    <h5>All images are copyright or refferenced</h5>
+  </div>
+
+
+</footer>
+
+
+
+
+
+<script src="javascript/order.js"></script>
+</body>
+
+
+</html>
