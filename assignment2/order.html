@@ -8,30 +8,40 @@
   <meta name="author"      content="Nguyen Gia Binh" >
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="mainCSS/style.css" rel="stylesheet">
+  <link href="mainCSS/order.css" rel="stylesheet">
 
 </head>
 <body>
     <header>
         <div id="header_container">
-          <img src="image/logo.png" alt="Dreamy cafe logo" id="header_icon"><p id="header_title"><a rel="Click" href="index.html" style="text-decoration: none;">Dreamy Cafe</a></p>
+          <img src="image/logomain.png" alt="Dreamy cafe logo" id="header_icon"><p id="header_title"><a rel="Click" href="index.html" style="text-decoration: none;">Dreamy Cafe</a></p>
         </div>
         <div id="nav">
           <ul>
             <li><a class="a1 " href="register.html">Register</a></li>
-            <li><a class="a1 " href="order.html">Order now</a></li>
+            <li><a id="current" class="a1 " href="order.html">Order now</a></li>
             <li><a class="a1 " href="index.html">Home</a></li>
           </ul>
         </div>
     
     </header>
 
+    <div id="slider">
+        <ul id="slideWrap"> 
+          <li><img src="image/logo.png" alt=""></li>
+          <li><img src="image/adver.jpg" alt=""></li>
+          <li><img src="image/instant1.jpg" alt=""></li>
+    
+        </ul>
+      </div>
+
   <form id="regform" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/formtest.php">
 
     <fieldset>
 
-        <legend>Information</legend>
+        <legend><strong>Information</strong></legend>
 
-        <div>
+        <div class="order_form">
             <label>Pick-up or Delivery ?</label>
             <input type="radio" onclick="yesnoCheck();" name="take_order" id="deli" value="delivery" />
             <label>Delivery</label>
@@ -39,14 +49,14 @@
             <label>Pick-up</label>
         </div>
 
-        <div id="ifYes">
+        <div class="order_form" id="ifYes">
             <div>
                 <label>Delivery address</label>
                 <input id="delivery" type="text" name="delivery_address" />
             </div>
             <div class="radioinput">
                 <label>Billing address = delivery address</label>
-                <input id="same" type="checkbox" name="same_delivery_address" value="yes" onclick="copy(event)" />
+                <input id="same" type="checkbox" name="same_delivery_address" value="yes" onclick="copyAddress()" />
             </div>
             <div>
                 <label>Billing address</label>
@@ -54,23 +64,24 @@
             </div>
         </div>
 
-        <div>
+        <div class="order_form">
             <label>Contact number</label>
             <input id="contact" type="number" name="contact" />
         </div>
 
-        <div>
+        <div class="order_form">
             <label>Email</label>
             <input type="email" id="email" name="email" />
         </div>
 
-        <div>
+        <div class="order_form">
             <label>Drink</label>
             <input type="radio" name="drink" value="inH" >In-house
             <input type="radio" name="drink" value="inS" >Instant
+            <input type="radio" name="drink" value="Esp" >Espresso
         </div>
 
-        <div>
+        <div class="order_form">
             <label>Payment method</label>
             <input type="radio" onclick="yesCheck();" name="pay" id="paypickup" value="on_pick-up" />pick-up
             <input type="radio" onclick="yesCheck();" name="pay" id="payonline" value="online" />Online
@@ -83,10 +94,10 @@
 
         <fieldset>
 
-            <legend>Credit card information</legend>
+            <legend><strong>Credit card information</strong></legend>
 
-            <div class="">
-                <label>Choose one of the following card</label>
+            <div class="order_form">
+                <label>Type of card: </label>
                 <input type="radio" id="visa" name="card_type" value="Visa" />
 
                 <label>Visa</label>
@@ -97,15 +108,15 @@
                 <label>American Express</label>
             </div>
 
-            <div>
-                <label>Enter credit card number</label>
+            <div class="order_form">
+                <label>card number</label>
                 <input id="creditnumber" type="number" name="credit_number" />
             </div>
 
         </fieldset>
     </div>
 
-    <div">
+    <div class="order_form3">
         <input type="reset" value="Reset" />
         <input type="submit" value="Submit" />
     </div>
@@ -117,7 +128,7 @@
 <footer>
     <hr>
   <div id="footer_logo">
-      <img src="image/logo.png" alt="Dreamy cafe logo" id="footer_icon" width="200px" height="200px">
+      <img src="image/logomain.png" alt="Dreamy cafe logo" id="footer_icon" width="200px" height="200px">
   
   </div>
 
@@ -136,6 +147,7 @@
 
 
 <script src="javascript/order.js"></script>
+<script src="javascript/script.js"></script>
 </body>
 
 

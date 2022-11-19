@@ -8,26 +8,36 @@
   <meta name="author"      content="Nguyen Gia Binh" >
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="mainCSS/style.css" rel="stylesheet">
+  <link href="mainCSS/index.css" rel="stylesheet">
 
 </head>
 <body>
   <header>
     <div id="header_container">
-      <img src="image/logo.png" alt="Dreamy cafe logo" id="header_icon"><p id="header_title"><a rel="Click" href="index.html" style="text-decoration: none;">Dreamy Cafe</a></p>
+      <img src="image/logomain.png" alt="Dreamy cafe logo" id="header_icon"><p id="header_title"><a rel="Click" href="index.html" style="text-decoration: none;">Dreamy Cafe</a></p>
     </div>
     <div id="nav">
       <ul>
         <li><a class="a1 " href="register.html">Register</a></li>
         <li><a class="a1 " href="order.html">Order now</a></li>
-        <li><a class="a1 " href="index.html">Home</a></li>
+        <li><a id="current" class="a1 " href="index.html">Home</a></li>
       </ul>
     </div>
 
   </header>
+
+  <div id="slider">
+    <ul id="slideWrap"> 
+      <li><img src="image/logo.png" alt=""></li>
+      <li><img src="image/adver.jpg" alt=""></li>
+      <li><img src="image/instant1.jpg" alt=""></li>
+
+    </ul>
+  </div>
   
   <div id="history">
-    <h1 id="history">History</h1>
-    <p>Space and Dream have always been a part of my fantasy. There just something about it that keep me attracted to it and combine with the fact that i have to inherit the family coffee shop , i want to incorparate some of my favourite stuff in it  </p>
+    <h1>History</h1>
+    <p  id="history">Space and Dream have always been a part of my fantasy. There just something about it that keep me attracted to it and combine with the fact that i have to inherit the family coffee shop , i want to incorparate some of my favourite stuff in it  </p>
 
   </div>
 
@@ -36,13 +46,13 @@
   <div class="row">
 
     <div class="column">
-      <strong><a href="" class="menu">Instant</a></strong>
-      <img class="foodMenu" src="image/sample.jpg" alt="Instant_Coffee" id="instant" width="600px" height="340px">
+      <strong><a href="instantcof.html" class="menu">Instant</a></strong>
+      <img class="foodMenu" src="image/instantcover.jpg" alt="Instant_Coffee" id="instant" width="500px" height="300px">
     </div>
 
     <div class="column">
-      <strong><a href="" class="menu">IN-HOUSE</a></strong>
-      <img class="foodMenu" src="image/sample.jpg" alt="IN-HOUSE_creation" id="inhouse" width="600px" height="340px">
+      <strong><a href="inhousecof.html" class="menu">INHOUSE</a></strong>
+      <img class="foodMenu" src="image/inhousecover.jpg" alt="IN-HOUSE_creation" id="inhouse" width="500px" height="300px">
     </div>
 
   </div>
@@ -50,18 +60,18 @@
   <div class="row2">
 
     <div class="column2">
-      <strong><a href="" class="menu">ESPRESSO</a></strong>
-      <img class="foodMenu" src="image/sample.jpg" alt="espresso" id="espresso" width="600px" height="340px">
+      <strong><a href="espresso.html" class="menu">ESPRESSO</a></strong>
+      <img class="foodMenu" src="image/esp2.jpg" alt="espresso" id="espresso" width="500px" height="300px">
     </div>
 
     <div class="column2">
-      <strong><a href="" class="menu">CHOCOLATE</a></strong>
-      <img class="foodMenu" src="image/sample.jpg" alt="chocolate" id="chocolate" width="600px" height="340px">
+      <strong><a href="choco.html" class="menu">CHOCOLATE</a></strong>
+      <img class="foodMenu" src="image/choc2.jpg" alt="chocolate" id="chocolate" width="500px" height="300px">
     </div>
 
   </div>
   <div id="caution1">
-    <p>Seedlings and chocolate will be send as side on every order for free so they are not options to select when ordering</p>
+    <p>Chocolate will be send as side on every order for free so they are not options to select when ordering</p>
     <p>When you choose a drink you will have whatever we have at the time so its a gamble</p>
   </div>
 
@@ -69,7 +79,7 @@
 
   <div>
 
-   <div id="map" class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=400&amp;height=400&amp;hl=en&amp;q=Tay Ho&amp;t=p&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://formatjson.org/">format json</a></div><style>.mapouter{position:relative;text-align:right;width:400px;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:400px;height:400px;}.gmap_iframe {width:400px!important;height:400px!important;}</style></div>
+    <div id="map" class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=500&amp;height=400&amp;hl=en&amp;q=tay ho&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://piratebay-proxys.com/">Piratebay</a></div><style>.mapouter{position:relative;text-align:right;width:500px;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:500px;height:400px;}.gmap_iframe {width:500px!important;height:400px!important;}</style></div>
    <div id="hours">
     <table id="table">
       <tr>
@@ -94,10 +104,12 @@
    </div>
   </div>
 
+  <script src="javascript/script.js"></script>
+
   <footer>
     <hr>
   <div id="footer_logo">
-      <img src="image/logo.png" alt="Dreamy cafe logo" id="footer_icon" width="200px" height="200px">
+      <img src="image/logomain.png" alt="Dreamy cafe logo" id="footer_icon" width="200px" height="200px">
   
   </div>
 

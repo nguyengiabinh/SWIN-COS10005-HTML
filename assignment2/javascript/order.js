@@ -44,49 +44,64 @@ function init() {
 
 window.onload = init;
 
-// NO IDEA HOW TO DO IT TRY LATER
+// COPY AND PASTE ADDRESS//
 
-// function addressFunction() {
- // 	if (document.getElementById("same").checked) {
- // 		document.getElementById("billing").value = document.getElementById("delivery").value;
- // 	}
- // 	else {
- // 		document.getElementById("billing").textContent = "";
- // 	}
- // }
-
-// window.onchange = addressFunction;
-
-function yesnoCheck() {
-	if (document.getElementById('deli').checked) {
-		document.getElementById('ifYes').style.visibility = 'visible';
-	}
-	else document.getElementById('ifYes').style.visibility = 'hidden';
-}
-
-function yesCheck() {
-	if (document.getElementById('payonline').checked) {
-		document.getElementById('ifChose').style.visibility = 'visible';
-	}
-	else document.getElementById('ifChose').style.visibility = 'hidden';
-}
-
-function copy(event) {
+function Address() {
+	var same = document.getElementById("same");
+	var billing = document.getElementById("billing");
 	var delivery = document.getElementById("delivery");
-	var billing = document.getElementById("delivery");
-	var checked = document.getElementById("same").checked;
-	if (checked) {
+
+	if (same.checked) {
+		billing.value = delivery.value;
+	} else {
+		billing.value = "";
+	}
+}
+
+window.onchange = Address;
+
+
+function copyAddress() {
+	var same = document.getElementById("same");
+	var billing = document.getElementById("billing");
+	var delivery = document.getElementById("delivery");
+
+	if (same.checked) {
 		if (delivery.value) {
 			billing.value = delivery.value;
-		}
-		else {
-			alert('Please enter your delivery address first.');
-			event.preventDefault();
-		}
 
+		} else {
+			alert('Pls enter delivery address');
+		}
+	}
+}
+
+window.onchange = copyAddress;
+
+function yesnoCheck() {
+	var deliform = document.getElementById('deli');
+	var deliaddress = document.getElementById('ifYes');
+
+    if (deliform.checked) {
+		deliaddress.style.visibility = 'visible';
+	}
+	else {
+		deliaddress.style.visibility = 'hidden';
 	}
 }
 
 window.onchange = yesnoCheck();
+
+function yesCheck() {
+	var payonl = document.getElementById('payonline');
+	var carddes = document.getElementById('ifChose');
+
+	if (payonl.checked) {
+		carddes.style.visibility = 'visible';
+	}
+	else {
+		carddes.style.visibility = 'hidden';
+	}
+}
+
 window.onchange = yesCheck();
-window.onchange = copy();
